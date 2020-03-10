@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chirper</title>
+</head>
+<body>
+    <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+                <div class="text-danger text-center">
+                    <h1 class="display-1">Chirper</h1>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="text-danger text-center">
+                    <h2>Chirp Into the Void!</h2>
+                </div>
+            </div>
+            <div class="col-sm text-center align-middle">
+              <img src="red_bird.jpg" height="100" alt="Unavailable"></img>
+            </div>
+          </div>
+        </div>
+
+        <div>
+            <input
+                class="col-2 p-3 mb-3 mt-3 bg-danger text-white"
+                type="text"
+                name="userName"
+                id="userName"
+                placeholder="Username"
+            ></input>
+
+            <input
+                class="col-8 p-3 mb-3 mt-3 bg-danger text-white"
+                type="text"
+                name="chirpText"
+                id="chirpText"
+                placeholder="Chirp"
+            ></input>
+
+
+            <button id="postChirpButton"  class=" col-1 btn btn-danger p-3 mb-4 mt-3">Submit</button>
+        </div>
+
+        <div class="text-white bg-danger">
+        <div id="chirpDisplay">
+            
+        </div>
+</div>
+
+      </div>
+      <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
